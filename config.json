@@ -1,0 +1,45 @@
+{
+    "monitoring": {
+        "enabled": {
+            "debugLogs": true,
+            "governorLimits": true,
+            "codeQuality": true
+        },
+        "intervals": {
+            "debugLogHours": 1,
+            "codeQualityHours": 24
+        }
+    },
+    "thresholds": {
+        "governorLimits": {
+            "soqlQueries": 70,
+            "dmlStatements": 70,
+            "cpuTime": 70,
+            "heapSize": 70
+        },
+        "errorRate": {
+            "percentIncrease": 100,
+            "absoluteCount": 10
+        },
+        "codeQuality": {
+            "cyclomaticComplexity": 15,
+            "methodLength": 100,
+            "classLength": 1000,
+            "minTestCoverage": 75
+        }
+    },
+    "notifications": {
+        "email": {
+            "enabled": true,
+            "onAnomalyOnly": true
+        },
+        "reports": {
+            "generateHtml": true,
+            "outputDir": "./reports"
+        }
+    },
+    "storage": {
+        "database": "./data/monitoring.db",
+        "retentionDays": 30
+    }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "apex-monitor-agent",
+  "version": "1.0.0",
+  "description": "Autonomous agent for monitoring Salesforce Apex code quality, governor limits, and debug logs",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "monitor": "node index.js --run-once",
+    "test": "echo \"Tests coming soon\" && exit 0"
+  },
+  "keywords": [
+    "salesforce",
+    "apex",
+    "monitoring",
+    "autonomous",
+    "agent"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "jsforce": "^2.0.0",
+    "node-cron": "^3.0.3",
+    "nodemailer": "^6.9.8",
+    "winston": "^3.11.0",
+    "better-sqlite3": "^9.2.2",
+    "dotenv": "^16.3.1"
+  }
+}
